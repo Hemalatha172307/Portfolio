@@ -1,0 +1,105 @@
+/* Navbar Styles */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: relative;
+  padding: top;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 170px;
+}
+
+.navbar-logo h1{
+  color: orange;
+}
+
+h1 span {
+  color: #fff;
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 16px;
+  color: #fff;
+  list-style: none;
+}
+li{
+  /*position: relative;
+  left: -100px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active{
+  color: orange;
+}
+.nav-menu li:hover {
+  text-decoration: underline;
+  color: orange;
+  cursor: pointer;
+  text-underline-offset: 8px;
+}
+
+.nav-btn button{
+  border-radius: 12px;
+  padding: 10px 10px;
+  border: transparent;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  width: auto;
+}
+.nav-btn .menu-bar {
+  color: #fff;
+  font-size: 25px;
+  display: none;
+  margin-left: 55px;
+  padding-top: 10px;
+}
+@media (max-width: 768px) {  
+  .navbar {  
+    flex-direction: column; /* Stack items on smaller screens */  
+    align-items: flex-start;  
+    margin: 20px 10px; /* Adjust margins */  
+  }  
+
+  .nav-menu {  
+    flex-direction: column; /* Stack menu items vertically */  
+    display: none; /* Hide menu by default */  
+    width: 100%; /* Full width for mobile */  
+    transition: max-height 0.3s ease; /* Smooth transition */  
+  }  
+
+  .nav-menu.active {  
+    display: flex; /* Show menu when active */  
+  }  
+
+  .nav-menu li {  
+    width: 100%; /* Full width items */  
+    justify-content: flex-start; /* Align items to the start */  
+    padding: 10px 20px; /* Spacing and padding for touch targets */  
+  }  
+
+  .nav-btn .menu-bar {  
+    display: block; /* Show hamburger icon */  
+    cursor: pointer; /* Pointer cursor for clickability */  
+    
+  } 
+  .nav-btn button{
+    display: none;
+  }
+  .nav-menu li{
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px 20px;
+  }
+}

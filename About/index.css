@@ -1,0 +1,118 @@
+
+
+
+.home-section{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  display: flex;
+}
+.home-section h1{
+  font-size: 12px;
+}
+.text-section{
+  font-size: 20px;
+  margin:8% 12%;
+  gap: 10px;
+  font-weight: normal;
+  margin-left: 180px;
+}
+h4{
+  font-weight: normal;
+}
+.text-container h1{
+  font-size: 45px;
+  
+}
+.text-container p{
+  margin-top: 3%;
+  font-size: 18px;
+}
+.image-container{
+  display: flex;
+  flex-direction: column;
+}
+.image-container img{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 400px;
+  height: 450px;
+  padding-left: 150%;
+  display: flex;
+  justify-content: end;
+  margin-top: -250px;
+  margin-left: -150px;
+}
+.btn, .btn1{
+  background-color: orange;
+  padding: 17px;
+  position: relative;
+  top: 65px;
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  letter-spacing: 0.75px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 140px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn1{
+  position: relative;
+  left: 50px;
+  background-color: black;
+}
+
+.text-container button:hover {  
+  background-color: transparent; /* Darker shade on hover */  
+  border: 1px solid rgb(200, 138, 21);
+  border-width: 2px;
+}
+.share{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 3rem;
+  left: 15%;
+}
+.share p{
+  font-size: 17px;
+  color: #fff;
+  margin-right: -22px;
+}
+.paragraph{
+  position: relative;
+  left: -40px;
+}
+.social button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+  box-shadow: 0px 20px 40px #00000070;
+  border: 1px solid #3b3b3b;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 5px; /* Add some space between buttons */  
+  cursor: pointer; /* Indicate that the button is clickable */  
+}
+
+
+/* Styles for mobile devices */  
+@media screen and (max-width: 600px) {  
+  body {  
+      background-color: lightblue;  
+  }  
+  
+}  
+
+/* Styles for tablets and larger devices */  
+@media screen and (min-width: 601px) {  
+  body {  
+      background-color: lightgreen;  
+  }  
+}

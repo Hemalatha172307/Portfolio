@@ -1,0 +1,167 @@
+.home-section, .aboutme-section, .skills-section{
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.skills-container h2{
+  color: grey;
+  font-size: 16.5px;
+  margin-left: 710px;
+  margin-top: 110px;
+  font-weight: normal;
+}
+
+.skills-container h1{
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+}
+
+.icon-style {
+  font-size: 35px; 
+  color: #007bff; 
+  margin: 10px; 
+  position: relative;
+  left: 340px;
+  top: 30px;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+
+.front-end-section h1{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  left: 400px;
+  top: 60px;
+}
+.front-end-span {
+  color: grey;
+  font-size: 15px;
+  position: relative;
+  top: 23px;
+  left: -170px;
+  font-weight: 500;
+}
+
+.skills-section {  
+  padding: 20px;  
+}  
+
+
+/* Skill bar container and layout */
+.skill-bar {
+  position: relative;
+  top: 55px;
+  left: 400px;
+  margin-bottom: 15px; /* Space between skill bars */
+}
+
+.skill-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.progress-bar-container {
+  width: 50%;
+  max-width: 350px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px; /* Space above the bar */
+}
+
+/* Dropdown icon for toggling visibility */
+.dropdown {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  left: 680px;
+  top: 20px;
+}
+
+/* Progress bar styling */
+.progress-bar {
+  height: 6px;
+  background-color: #3f51b5; /* Primary purple color */
+  width: 0; /* Initial width - will be set inline */
+  transition: width 0.3s ease;
+}
+
+/* Backend section styles */
+.back-end-section{
+  position: relative;
+  left: 480px;
+  top: -80px;
+}
+.back-end-section h1 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  left: 400px;
+  top: 60px;
+}
+
+.back-end-span {
+  color: grey;
+  font-size: 15px;
+  position: relative;
+  top: 23px;
+  left: -170px;
+  font-weight: 500;
+}
+
+/* Backend section skill bars */
+.back-end-section .skill-bar {
+  position: relative;
+  top: 55px;
+  left: 400px;
+  margin-bottom: 15px; /* Space between backend skill bars */
+}
+
+.back-end-section .skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.back-end-section .progress-bar-container {
+  width: 50%;
+  max-width: 350px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px; /* Space above the bar */
+}
+
+/* Dropdown icon for backend */
+.back-end-section .dropdown {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  left: 680px;
+  top: 20px;
+}
+
+.back-end-section .progress-bar {
+  height: 6px;
+  background-color: #3f51b5; /* Primary purple color */
+  width: 0; /* Initial width - will be set inline */
+  transition: width 0.3s ease;
+}

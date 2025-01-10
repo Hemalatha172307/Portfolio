@@ -1,35 +1,42 @@
-import React from 'react'
-import './index.css'
-import { FaFacebookF, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa"
-import image from '../../assets/home.png'
+import React from 'react';  
+import './index.css';  
 
+const About = () => {  
+  return (  
+    <div className='aboutme-section' id="about">  
+      <div className='aboutme-container'>  
+        <h1>About Me</h1>  
+        <h2>My Introduction</h2>  
+        <p className='paragraph'>  
+          I am a web developer with extensive knowledge and years of experience   
+          in web technologies and UI/UX design, delivering quality work.  
+        </p>  
+      </div>  
+      <div className='aboutme-image'>  
+        <img   
+          src="https://img.freepik.com/free-photo/alluring-young-african-american-female-with-dark-curly-hairstyle-smiling-determined-motivated-cross-arms-chest-confident-pose-smiling-daring-camera-white-wall_176420-35065.jpg"  
+          alt="A confident young African American woman"  
+        />  
+      </div>  
+      <div className='about-me-experience'>  
+        <p className='experience-item'>  
+          <span className='experience-duration'>02+</span>   
+          <span className='label experience'> Years of Experience</span>  
+        </p>  
+        <p className='experience-item'>  
+          <span className='projects-completed'>10</span>   
+          <span className='label'> Completed Projects</span>  
+        </p>  
+        <p className='experience-item'>  
+          <span className='companies-worked'>01</span>   
+          <span className='label'> Company Worked At</span>  
+        </p>  
+      </div>  
+      <div className='aboutme-button'>  
+        <button type='button'>Download CV</button>  
+      </div>  
+    </div>  
+  );  
+};  
 
-const Home = () => {
-  return (
-    <div className='home-section' id="home">
-      <div className='text-section'>
-        <h4>FrontEnd Developer</h4>
-        <div className='text-container'>
-          <h1>Hemalatha Arjee</h1>
-          <p>I'm a FrontEnd Developer with 10 years of Experience</p>
-          <button className='btn'>Hire Me</button>
-          <button className='btn1'>View Projects</button>
-        </div>
-        <div className='image-container'>
-          <img src={image} alt="home-image"/>
-        </div>
-        <div className='share'>
-          <p className='paragraph'>Check out my:</p>
-          <div className='social'>
-            <button><FaFacebookF /></button>
-            <button><FaTwitter/></button>
-            <button><FaLinkedinIn /></button>
-            <button><FaSkype /></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default Home
+export default About;

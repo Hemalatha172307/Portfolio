@@ -13,7 +13,11 @@
   align-items: center;
   margin: 20px 170px;
 }
+.nav-link {
+  color: #fff;
+  text-decoration: none;
 
+}
 .navbar-logo h1{
   color: orange;
 }
@@ -38,10 +42,10 @@ li{
   align-items: center;
   justify-content: center;
 }
-.active{
+.active .nav-link{
   color: orange;
 }
-.nav-menu li:hover {
+.nav-menu li .nav-link:hover {
   text-decoration: underline;
   color: orange;
   cursor: pointer;
@@ -64,42 +68,4 @@ li{
   display: none;
   margin-left: 55px;
   padding-top: 10px;
-}
-@media (max-width: 768px) {  
-  .navbar {  
-    flex-direction: column; /* Stack items on smaller screens */  
-    align-items: flex-start;  
-    margin: 20px 10px; /* Adjust margins */  
-  }  
-
-  .nav-menu {  
-    flex-direction: column; /* Stack menu items vertically */  
-    display: none; /* Hide menu by default */  
-    width: 100%; /* Full width for mobile */  
-    transition: max-height 0.3s ease; /* Smooth transition */  
-  }  
-
-  .nav-menu.active {  
-    display: flex; /* Show menu when active */  
-  }  
-
-  .nav-menu li {  
-    width: 100%; /* Full width items */  
-    justify-content: flex-start; /* Align items to the start */  
-    padding: 10px 20px; /* Spacing and padding for touch targets */  
-  }  
-
-  .nav-btn .menu-bar {  
-    display: block; /* Show hamburger icon */  
-    cursor: pointer; /* Pointer cursor for clickability */  
-    
-  } 
-  .nav-btn button{
-    display: none;
-  }
-  .nav-menu li{
-    width: 100%;
-    justify-content: flex-end;
-    padding: 10px 20px;
-  }
 }
